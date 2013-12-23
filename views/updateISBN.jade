@@ -1,0 +1,10 @@
+html
+  head
+    title ISBN for update record
+  body
+    form(action='/update', method='post', name='updateRecord')
+      h3
+        u  Updating details in database
+      | ISBN :
+      input(type='text', name='ISBN')
+      input(type='submit', value='Update')

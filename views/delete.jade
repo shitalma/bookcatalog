@@ -1,0 +1,9 @@
+html
+  head
+    title Delete details from record
+  body
+    include template
+    form(action='/delete', method='post', name='deleteRecord')
+      | ISBN :
+      input(type='text', name='ISBN')
+      input(type='submit', value='Delete')

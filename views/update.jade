@@ -1,0 +1,50 @@
+html
+  head
+    title Update Query
+  body
+    include template
+    form(action='/updateData', method='post' , name='updateData')
+      table
+        br
+        br
+        tr
+          td
+            h3
+              u  Updating details in record 
+        tr
+          td ISBN : 
+          td
+            input(type='text', name='ISBN' , value= '#{list.ISBN}', readonly = 'true')
+          br
+          tr
+            td Book_title:  
+            td
+              input(type='text', name='Book_title', value= '#{list.Book_title}')
+            br
+            tr
+              td Price: 
+              td
+                input(type='text', name='Price',value= '#{list.Price}')
+              br
+              tr
+                td Author: 
+                td
+                  input(type='text', name='Author', value= '#{list.Author}')
+                br
+                tr
+                  td Publisher: 
+                  td
+                    input(type='text', name='Publisher', value= '#{list.Publisher}')
+                  br
+                  tr
+                    td Pages: 
+                    td
+                      input(type='text', name='No_of_pages', value= '#{list.No_of_pages}')
+                    br
+                    tr
+                      td
+                        input(type='submit', value='update')
+    br
+    br
+    br
+

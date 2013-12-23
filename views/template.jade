@@ -1,0 +1,14 @@
+extends layout
+block content
+   table(width='800px')
+     tr
+       td(width='200px')
+         a(href='/home',onclick = "return #{isHomeClickable}") Home
+       td(width='200px')
+         a(href='/insert',onclick = "return #{isInsertClickable}") Insert
+       td(width='200px')
+         a(href='/select',onclick = "return #{isSelectClickable}") Select 
+       td(width='200px')
+         a(href='/update',onclick = "return #{isUpdateClickable}") Update
+       td(width='200px')
+         a(href='/delete',onclick = "return #{isDeleteClickable}") Delete

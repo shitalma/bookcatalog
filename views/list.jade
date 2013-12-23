@@ -1,0 +1,22 @@
+html
+  head
+    title Select query
+  body
+    include template
+    h3  #{message}
+      table(border='1', width='500')
+        tr
+          th ISBN
+          th Book title
+          th Price
+          th Author
+          th Publisher
+          th No_of_pages
+        -each val in list
+          tr
+           td #{val.ISBN}
+           td #{val.Book_title}
+           td #{val.Price}
+           td #{val.Author}
+           td #{val.Publisher}
+           td #{val.No_of_pages}

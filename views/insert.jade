@@ -1,0 +1,47 @@
+html
+  head
+    title Bookcatalog
+  body
+    include template
+    form(action='/insert', method='post' , name='insertRecord')
+      table
+        tr
+          td
+            h3
+              u  Adding details in database 
+        tr
+          td ISBN : 
+          td
+            input(type='text', name='ISBN')
+          br
+          tr
+            td Book_title:	
+            td
+              input(type='text', name='Book_title')
+            br
+            tr
+              td Price: 
+              td
+                input(type='text', name='Price')
+              br
+              tr
+                td Author: 
+                td
+                  input(type='text', name='Author')
+                br
+                tr
+                  td Publisher: 
+                  td
+                    input(type='text', name='Publisher')
+                  br
+                  tr
+                    td Pages: 
+                    td
+                      input(type='text', name='No_of_pages')
+                    br
+                    tr
+                      td
+                        input(type='submit', value='Add')
+    br
+    br
+    br
